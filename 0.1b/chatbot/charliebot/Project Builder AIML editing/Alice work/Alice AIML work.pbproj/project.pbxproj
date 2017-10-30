@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		F579F12703A73FF20100010B = {
+			children = (
+				F579F13203A740840100010B,
+			);
+			isa = PBXGroup;
+			refType = 4;
+		};
+		F579F12903A73FF20100010B = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		F579F12A03A73FF20100010B = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		F579F12B03A73FF20100010B = {
+			buildStyles = (
+				F579F12903A73FF20100010B,
+				F579F12A03A73FF20100010B,
+			);
+			isa = PBXProject;
+			mainGroup = F579F12703A73FF20100010B;
+			projectDirPath = "";
+			targets = (
+			);
+		};
+		F579F13203A740840100010B = {
+			children = (
+				F579F13303A740840100010B,
+				F579F13403A740840100010B,
+				F579F13503A740840100010B,
+				F579F13603A740840100010B,
+				F579F13703A740840100010B,
+				F579F13803A740840100010B,
+				F579F13903A740840100010B,
+				F579F13A03A740840100010B,
+				F579F13B03A740840100010B,
+				F579F13C03A740840100010B,
+				F579F13D03A740840100010B,
+				F579F13E03A740840100010B,
+				F579F13F03A740840100010B,
+				F579F14003A740840100010B,
+				F579F14103A740840100010B,
+				F579F14203A740840100010B,
+				F579F14303A740840100010B,
+				F579F14403A740840100010B,
+				F579F14503A740840100010B,
+				F579F14603A740840100010B,
+				F579F14703A740840100010B,
+				F579F14803A740840100010B,
+				F579F14903A740840100010B,
+				F579F14A03A740840100010B,
+				F579F14B03A740840100010B,
+				F579F14C03A740840100010B,
+				F579F14D03A740840100010B,
+				F579F14E03A740840100010B,
+				F579F14F03A740840100010B,
+				F579F15003A740840100010B,
+				F579F15103A740840100010B,
+				F579F15203A740840100010B,
+				F579F15303A740840100010B,
+				F579F15403A740840100010B,
+				F579F15503A740840100010B,
+				F579F15603A740840100010B,
+				F579F15703A740840100010B,
+			);
+			isa = PBXGroup;
+			name = alice;
+			path = ../../brains/alice;
+			refType = 2;
+		};
+		F579F13303A740840100010B = {
+			isa = PBXFileReference;
+			path = 1.aiml;
+			refType = 4;
+		};
+		F579F13403A740840100010B = {
+			isa = PBXFileReference;
+			path = 2.aiml;
+			refType = 4;
+		};
+		F579F13503A740840100010B = {
+			isa = PBXFileReference;
+			path = 3.aiml;
+			refType = 4;
+		};
+		F579F13603A740840100010B = {
+			isa = PBXFileReference;
+			path = 4.aiml;
+			refType = 4;
+		};
+		F579F13703A740840100010B = {
+			isa = PBXFileReference;
+			path = 5.aiml;
+			refType = 4;
+		};
+		F579F13803A740840100010B = {
+			isa = PBXFileReference;
+			path = 6.aiml;
+			refType = 4;
+		};
+		F579F13903A740840100010B = {
+			isa = PBXFileReference;
+			path = 8.aiml;
+			refType = 4;
+		};
+		F579F13A03A740840100010B = {
+			isa = PBXFileReference;
+			path = 9.aiml;
+			refType = 4;
+		};
+		F579F13B03A740840100010B = {
+			isa = PBXFileReference;
+			path = A.aiml;
+			refType = 4;
+		};
+		F579F13C03A740840100010B = {
+			isa = PBXFileReference;
+			path = B.aiml;
+			refType = 4;
+		};
+		F579F13D03A740840100010B = {
+			isa = PBXFileReference;
+			path = C.aiml;
+			refType = 4;
+		};
+		F579F13E03A740840100010B = {
+			isa = PBXFileReference;
+			path = D.aiml;
+			refType = 4;
+		};
+		F579F13F03A740840100010B = {
+			isa = PBXFileReference;
+			path = E.aiml;
+			refType = 4;
+		};
+		F579F14003A740840100010B = {
+			isa = PBXFileReference;
+			path = F.aiml;
+			refType = 4;
+		};
+		F579F14103A740840100010B = {
+			isa = PBXFileReference;
+			path = G.aiml;
+			refType = 4;
+		};
+		F579F14203A740840100010B = {
+			isa = PBXFileReference;
+			path = H.aiml;
+			refType = 4;
+		};
+		F579F14303A740840100010B = {
+			isa = PBXFileReference;
+			path = I.aiml;
+			refType = 4;
+		};
+		F579F14403A740840100010B = {
+			isa = PBXFileReference;
+			path = J.aiml;
+			refType = 4;
+		};
+		F579F14503A740840100010B = {
+			isa = PBXFileReference;
+			path = K.aiml;
+			refType = 4;
+		};
+		F579F14603A740840100010B = {
+			isa = PBXFileReference;
+			path = L.aiml;
+			refType = 4;
+		};
+		F579F14703A740840100010B = {
+			isa = PBXFileReference;
+			path = M.aiml;
+			refType = 4;
+		};
+		F579F14803A740840100010B = {
+			isa = PBXFileReference;
+			path = N.aiml;
+			refType = 4;
+		};
+		F579F14903A740840100010B = {
+			isa = PBXFileReference;
+			path = O.aiml;
+			refType = 4;
+		};
+		F579F14A03A740840100010B = {
+			isa = PBXFileReference;
+			path = P.aiml;
+			refType = 4;
+		};
+		F579F14B03A740840100010B = {
+			isa = PBXFileReference;
+			path = Q.aiml;
+			refType = 4;
+		};
+		F579F14C03A740840100010B = {
+			isa = PBXFileReference;
+			path = R.aiml;
+			refType = 4;
+		};
+		F579F14D03A740840100010B = {
+			isa = PBXFileReference;
+			path = S.aiml;
+			refType = 4;
+		};
+		F579F14E03A740840100010B = {
+			isa = PBXFileReference;
+			path = star.aiml;
+			refType = 4;
+		};
+		F579F14F03A740840100010B = {
+			isa = PBXFileReference;
+			path = startup.xml;
+			refType = 4;
+		};
+		F579F15003A740840100010B = {
+			isa = PBXFileReference;
+			path = T.aiml;
+			refType = 4;
+		};
+		F579F15103A740840100010B = {
+			isa = PBXFileReference;
+			path = U.aiml;
+			refType = 4;
+		};
+		F579F15203A740840100010B = {
+			isa = PBXFileReference;
+			path = under.aiml;
+			refType = 4;
+		};
+		F579F15303A740840100010B = {
+			isa = PBXFileReference;
+			path = V.aiml;
+			refType = 4;
+		};
+		F579F15403A740840100010B = {
+			isa = PBXFileReference;
+			path = W.aiml;
+			refType = 4;
+		};
+		F579F15503A740840100010B = {
+			isa = PBXFileReference;
+			path = X.aiml;
+			refType = 4;
+		};
+		F579F15603A740840100010B = {
+			isa = PBXFileReference;
+			path = Y.aiml;
+			refType = 4;
+		};
+		F579F15703A740840100010B = {
+			isa = PBXFileReference;
+			path = Z.aiml;
+			refType = 4;
+		};
+	};
+	rootObject = F579F12B03A73FF20100010B;
+}

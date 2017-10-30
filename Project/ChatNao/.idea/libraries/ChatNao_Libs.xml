@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="ChatNao Libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/java-naoqi-sdk-2.4.3.28-win32-vs2010.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/java-sdk-4.0.0-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/javaFlacEncoder-0.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/okhttp-3.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/okio-1.13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

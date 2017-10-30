@@ -1,0 +1,27 @@
+<!-- AIML removed from the Anna project -->
+
+	<category>
+		<pattern>WHAT IS * * S FIRST NAME</pattern>
+		<template>Ummmm....<star/>?</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS *</pattern>
+		<template>Ummm...I dont know.
+				<think>
+				<set name="it">
+					<set name="topic">
+						<person/>
+					</set>
+				</set>
+			</think>
+		</template>
+	</category>
+
+	<category>
+		<pattern>WHAT IS * ABOUT</pattern>
+		<template>Ummmm....Isnt <set name="it">
+				<person/>
+			</set> about people overcoming obstacles?
+		</template>
+	</category>

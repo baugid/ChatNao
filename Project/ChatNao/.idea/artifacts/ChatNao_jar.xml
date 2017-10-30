@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ChatNao:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ChatNao_jar</output-path>
+    <root id="archive" name="ChatNao.jar">
+      <element id="module-output" name="ChatNao" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/commons-io-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/java-naoqi-sdk-2.4.3.28-win32-vs2010.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/java-sdk-4.0.0-jar-with-dependencies.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/javaFlacEncoder-0.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/okhttp-3.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../ChatNao/0.1b/lib/okio-1.13.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

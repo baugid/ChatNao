@@ -1,0 +1,45 @@
+./logs/error.log[2017-09-02 21:44:38] Exiting abnormally due to unforeseen runtime exception.
+./logs/error.log[2017-09-02 21:44:38] 12
+./logs/error.log[2017-09-02 21:44:38] java.lang.ArrayIndexOutOfBoundsException: 12
+./logs/error.log[2017-09-02 21:44:38] 	at org.alicebot.gui.SimpleConsole$ConsoleInputStream.read(SimpleConsole.java:56)
+./logs/error.log[2017-09-02 21:44:38] 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at java.io.InputStreamReader.read(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at java.io.BufferedReader.fill(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-09-02 21:44:38] 	at org.alicebot.server.core.util.Shell.run(Shell.java:67)
+./logs/error.log[2017-09-02 21:44:38] 	at org.alicebot.server.net.AliceServer.startup(AliceServer.java:96)
+./logs/error.log[2017-09-02 21:44:38] 	at org.alicebot.gui.SimpleConsole.start(SimpleConsole.java:398)
+./logs/error.log[2017-09-02 21:44:38] 	at org.alicebot.gui.SimpleConsole.main(SimpleConsole.java:471)
+./logs/error.log[2017-10-06 15:26:32] Exiting abnormally due to unforeseen runtime exception.
+./logs/error.log[2017-10-06 15:26:32] 12
+./logs/error.log[2017-10-06 15:26:32] java.lang.ArrayIndexOutOfBoundsException: 12
+./logs/error.log[2017-10-06 15:26:32] 	at org.alicebot.gui.SimpleConsole$ConsoleInputStream.read(SimpleConsole.java:56)
+./logs/error.log[2017-10-06 15:26:32] 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at java.io.InputStreamReader.read(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at java.io.BufferedReader.fill(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-10-06 15:26:32] 	at org.alicebot.server.core.util.Shell.run(Shell.java:67)
+./logs/error.log[2017-10-06 15:26:32] 	at org.alicebot.server.net.AliceServer.startup(AliceServer.java:96)
+./logs/error.log[2017-10-06 15:26:32] 	at org.alicebot.gui.SimpleConsole.start(SimpleConsole.java:398)
+./logs/error.log[2017-10-06 15:26:32] 	at org.alicebot.gui.SimpleConsole.main(SimpleConsole.java:471)
+./logs/error.log[2017-10-07 14:39:10] Exiting abnormally due to unforeseen runtime exception.
+./logs/error.log[2017-10-07 14:39:10] 13
+./logs/error.log[2017-10-07 14:39:10] java.lang.ArrayIndexOutOfBoundsException: 13
+./logs/error.log[2017-10-07 14:39:10] 	at org.alicebot.gui.SimpleConsole$ConsoleInputStream.read(SimpleConsole.java:56)
+./logs/error.log[2017-10-07 14:39:10] 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at java.io.InputStreamReader.read(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at java.io.BufferedReader.fill(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at java.io.BufferedReader.readLine(Unknown Source)
+./logs/error.log[2017-10-07 14:39:10] 	at org.alicebot.server.core.util.Shell.run(Shell.java:67)
+./logs/error.log[2017-10-07 14:39:10] 	at org.alicebot.server.net.AliceServer.startup(AliceServer.java:96)
+./logs/error.log[2017-10-07 14:39:10] 	at org.alicebot.gui.SimpleConsole.start(SimpleConsole.java:398)
+./logs/error.log[2017-10-07 14:39:10] 	at org.alicebot.gui.SimpleConsole.main(SimpleConsole.java:471)
