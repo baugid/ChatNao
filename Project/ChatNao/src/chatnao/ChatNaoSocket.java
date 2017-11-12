@@ -41,7 +41,7 @@ public class ChatNaoSocket {
         String ip = args[0];
 
         // opening Nao Session with given ip and port
-        app = new Application(args, "tcp://" + ip);
+        app = new Application(args, "tcp://" + ip + ":9559");
         System.out.println("Trying to connect to 'tcp://" + ip + "'...");
         app.start();
         s = app.session();

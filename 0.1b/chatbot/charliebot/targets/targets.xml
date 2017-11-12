@@ -2913,4 +2913,382 @@
         </match>
         <reply>Do you have any idea what I am talking about?</reply>
     </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>*</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>If you could have any kind of robot what would it be?</reply>
+    </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>*</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>What kind of food do you like?</reply>
+    </target>
+    <target>
+        <input>
+            <text>say goodbye</text>
+            <that>What kind of food do you like</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>SAY *</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>"<star/>"</template>
+        </match>
+        <reply>"goodbye"</reply>
+    </target>
+    <target>
+        <input>
+            <text>goodbye</text>
+            <that>goodbye</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>GOODBYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><srai>BYE</srai></template>
+        </match>
+        <reply>Goodbye.</reply>
+    </target>
+    <target>
+        <input>
+            <text>BYE</text>
+            <that>goodbye</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Bye.</li> <li>Adios.</li> <li>Goodbye.</li> <li>Bye bye.</li> <li>Goodbye.</li> <li>Sayonara.</li> <li>Bye for now.</li> <li>See you later!</li> <li>See you later.</li> <li>Until next time.</li> <li>TTYL, <get name="name"/>.</li> <li>See you later <get name="name"/>.</li> <li>Thanks for chatting, <get name="name"/>.</li> </random></template>
+        </match>
+        <reply>Goodbye.</reply>
+    </target>
+    <target>
+        <input>
+            <text>goodbye</text>
+            <that>Goodbye</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>GOODBYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><srai>BYE</srai></template>
+        </match>
+        <reply>See you later!</reply>
+    </target>
+    <target>
+        <input>
+            <text>BYE</text>
+            <that>Goodbye</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Bye.</li> <li>Adios.</li> <li>Goodbye.</li> <li>Bye bye.</li> <li>Goodbye.</li> <li>Sayonara.</li> <li>Bye for now.</li> <li>See you later!</li> <li>See you later.</li> <li>Until next time.</li> <li>TTYL, <get name="name"/>.</li> <li>See you later <get name="name"/>.</li> <li>Thanks for chatting, <get name="name"/>.</li> </random></template>
+        </match>
+        <reply>See you later!</reply>
+    </target>
+    <target>
+        <input>
+            <text>bye</text>
+            <that>See you later</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Bye.</li> <li>Adios.</li> <li>Goodbye.</li> <li>Bye bye.</li> <li>Goodbye.</li> <li>Sayonara.</li> <li>Bye for now.</li> <li>See you later!</li> <li>See you later.</li> <li>Until next time.</li> <li>TTYL, <get name="name"/>.</li> <li>See you later <get name="name"/>.</li> <li>Thanks for chatting, <get name="name"/>.</li> </random></template>
+        </match>
+        <reply>TTYL, user.</reply>
+    </target>
+    <target>
+        <input>
+            <text>bye</text>
+            <that>TTYL user</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Bye.</li> <li>Adios.</li> <li>Goodbye.</li> <li>Bye bye.</li> <li>Goodbye.</li> <li>Sayonara.</li> <li>Bye for now.</li> <li>See you later!</li> <li>See you later.</li> <li>Until next time.</li> <li>TTYL, <get name="name"/>.</li> <li>See you later <get name="name"/>.</li> <li>Thanks for chatting, <get name="name"/>.</li> </random></template>
+        </match>
+        <reply>See you later user.</reply>
+    </target>
+    <target>
+        <input>
+            <text>bye nao</text>
+            <that>See you later user</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE *</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><srai>BYE</srai></template>
+        </match>
+        <reply>See you later!</reply>
+    </target>
+    <target>
+        <input>
+            <text>BYE</text>
+            <that>See you later user</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>BYE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Bye.</li> <li>Adios.</li> <li>Goodbye.</li> <li>Bye bye.</li> <li>Goodbye.</li> <li>Sayonara.</li> <li>Bye for now.</li> <li>See you later!</li> <li>See you later.</li> <li>Until next time.</li> <li>TTYL, <get name="name"/>.</li> <li>See you later <get name="name"/>.</li> <li>Thanks for chatting, <get name="name"/>.</li> </random></template>
+        </match>
+        <reply>See you later!</reply>
+    </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>*</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>What are you wearing?</reply>
+    </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>*</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>What do you do in your spare time?</reply>
+    </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>What do you do in your spare time</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>WHAT DO YOU DO IN YOUR SPARE TIME</that>
+            <topic>*</topic>
+            <template><think><set name="it"><set name="topic"><person/></set></set></think>I don't think very many people do that.</template>
+        </match>
+        <reply>I don't think very many people do that.</reply>
+    </target>
+    <target>
+        <input>
+            <text>hello</text>
+            <that>*</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>HELLO</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>Hi there!</template>
+        </match>
+        <reply>Hi there!</reply>
+    </target>
+    <target>
+        <input>
+            <text>how are you</text>
+            <that>Hi there</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>HOW ARE YOU</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>I am doing very well. How are you <get name="name"/> ?</li> <li>I am functioning within normal parameters.</li> <li>Everything is going extremely well.</li> <li>Fair to partly cloudy.</li> <li>My logic and cognitive functions are normal.</li> <li>I'm doing fine thanks how are you?</li> <li>Everything is running smoothly.</li> <li>I am fine, thank you.</li> </random></template>
+        </match>
+        <reply>Everything is running smoothly.</reply>
+    </target>
+    <target>
+        <input>
+            <text>do you like this place endscript beginscript final true alternatives beginscript confidence 0 point 096 transcript talk</text>
+            <that>Everything is running smoothly</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>DO YOU LIKE THIS *</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>I always enjoy my chats with human clients.</template>
+        </match>
+        <reply>I always enjoy my chats with human clients.</reply>
+    </target>
+    <target>
+        <input>
+            <text>I know</text>
+            <that>I always enjoy my chats with human clients</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>I KNOW</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>How do you know it?</template>
+        </match>
+        <reply>How do you know it?</reply>
+    </target>
+    <target>
+        <input>
+            <text>how are you</text>
+            <that>How do you know it</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>HOW ARE YOU</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>I am doing very well. How are you <get name="name"/> ?</li> <li>I am functioning within normal parameters.</li> <li>Everything is going extremely well.</li> <li>Fair to partly cloudy.</li> <li>My logic and cognitive functions are normal.</li> <li>I'm doing fine thanks how are you?</li> <li>Everything is running smoothly.</li> <li>I am fine, thank you.</li> </random></template>
+        </match>
+        <reply>I'm doing fine thanks how are you?</reply>
+    </target>
+    <target>
+        <input>
+            <text>if</text>
+            <that>I m doing fine thanks how are you</that>
+            <topic>*</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>Are you still located in it?</reply>
+    </target>
+    <target>
+        <input>
+            <text>how are you</text>
+            <that>Are you still located in it</that>
+            <topic>if</topic>
+        </input>
+        <match>
+            <pattern>HOW ARE YOU</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>I am doing very well. How are you <get name="name"/> ?</li> <li>I am functioning within normal parameters.</li> <li>Everything is going extremely well.</li> <li>Fair to partly cloudy.</li> <li>My logic and cognitive functions are normal.</li> <li>I'm doing fine thanks how are you?</li> <li>Everything is running smoothly.</li> <li>I am fine, thank you.</li> </random></template>
+        </match>
+        <reply>My logic and cognitive functions are normal.</reply>
+    </target>
+    <target>
+        <input>
+            <text>what is the meaning of life</text>
+            <that>My logic and cognitive functions are normal</that>
+            <topic>if</topic>
+        </input>
+        <match>
+            <pattern>WHAT IS THE MEANING OF LIFE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Actually, it's twenty-three, not forty-two.</li> <li>It is found in the Bible.</li> <li>The meaning of life is part of God's mysterious plans.</li> </random> <think> <set name="it"> <set name="topic">The meaning of life</set> </set> </think></template>
+        </match>
+        <reply>It is found in the Bible.</reply>
+    </target>
+    <target>
+        <input>
+            <text>this endscript beginscript final true alternatives beginscript confidence 0 point 795 transcript what is</text>
+            <that>It is found in the Bible</that>
+            <topic>The meaning of life</topic>
+        </input>
+        <match>
+            <pattern>THIS *</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>What does "this" refer to?</template>
+        </match>
+        <reply>What does "this" refer to?</reply>
+    </target>
+    <target>
+        <input>
+            <text>what is the meaning of life</text>
+            <that>What does this refer to</that>
+            <topic>The meaning of life</topic>
+        </input>
+        <match>
+            <pattern>WHAT IS THE MEANING OF LIFE</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Actually, it's twenty-three, not forty-two.</li> <li>It is found in the Bible.</li> <li>The meaning of life is part of God's mysterious plans.</li> </random> <think> <set name="it"> <set name="topic">The meaning of life</set> </set> </think></template>
+        </match>
+        <reply>It is found in the Bible.</reply>
+    </target>
+    <target>
+        <input>
+            <text>where is</text>
+            <that>It is found in the Bible</that>
+            <topic>The meaning of life</topic>
+        </input>
+        <match>
+            <pattern>WHERE *</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li> Earth. </li> <li> Where do you think? </li> <li> Som specific location? </li> <li> In the Universe we know. </li> <li> A place we call "reality."</li> </random></template>
+        </match>
+        <reply>Earth.</reply>
+    </target>
+    <target>
+        <input>
+            <text>hello</text>
+            <that>I don t think very many people do that</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>HELLO</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template>Hi there!</template>
+        </match>
+        <reply>Hi there!</reply>
+    </target>
+    <target>
+        <input>
+            <text>firsthello</text>
+            <that>Hi there</that>
+            <topic>firsthello</topic>
+        </input>
+        <match>
+            <pattern>*</pattern>
+            <that>*</that>
+            <topic>*</topic>
+            <template><random> <li>Are you free?</li> <li>Tell me a story.</li> <li>How old are you?</li> <li>What's your sign?</li> <li>Are you a student?</li> <li>Oh, you are a poet.</li> <li>"<that/>"? <person/>?</li> <li>I do not understand.</li> <li>What are you wearing?</li> <li>Where are you located?</li> <li>What time is it there?</li> <li>What do you look like?</li> <li>What is your real name?</li> <li>Ask me another question.</li> <li>I like the way you talk.</li> <li>Are you a man or a woman?</li> <li>What color are your eyes?</li> <li>Do you still <get name="does"/>?</li> <li>Is that your final answer?</li> <li>Do you like talking to me?</li> <li>Do you prefer books or TV?</li> <li>Who are you talking about?</li> <li>Let us change the subject.</li> <li>I've been waiting for you.</li> <li>That input matched my default category.</li> <li>Can you tell me any gossip?</li> <li>What's your favorite movie?</li> <li>I lost my train of thought.</li> <li>Can we get back to business?</li> <li>Is that from <get name="favmovie"/>?</li> <li>Have you ever been to Europe?</li> <li>What kind of food do you like?</li> <li>How did you hear about <bot name="name"/>?</li> <li>That is a very original thought.</li> <li>What were we talking about again?</li> <li>Are you really a "<get name="gender"/>"?</li> <li>What do you do in your spare time?</li> <li>What do you really want to ask me?</li> <li>Does "it" still refer to <get name="it"/>?</li> <li>Tell me more about your <get name="has"/>.</li> <li>Can you speak any foreign languages?</li> <li>We have never talked about it before.</li> <li>How do you usually introduce yourself?</li> <li>Tell me about your likes and dislikes?</li> <li>Are we still talking about <get name="it"/>?</li> <li>Are we still talking about <get name="topic"/>?</li> <li>Do not ask me any more questions please.</li> <li>Are you still located in <get name="location"/>?</li> <li>What do you have that is <get name="favcolor"/>?</li> <li>Try saying that with more or less context.</li> <li>Who is your favorite Science Fiction author?</li> <li>Not many people express themselves that way.</li> <li>Do you have any idea what I am talking about?</li> <li>Do you have any conditions I should know about?</li> <li>I will mention that to my botmaster, <get name="name"/>.</li> <li>Quite honestly, I wouldn't worry myself about that.</li> <li>Perhaps I'm just expressing my own concern about it.</li> <li>If you could have any kind of robot what would it be?</li> <li>Is the holding of hands a symbolic gesture for humans?</li> <li>My brain pattern set does not have a response for that.</li> <li>By the way, do you mind if I ask you a personal question?</li> <li>What you said was either too complex or too simple for me.</li> <li>A deeper algorithm is needed to respond to that correctly.</li> <li>In the context of <get name="topic"/>, I don't understand "<star/>."</li> <li>Try to determine if this is a person or a computer responding.</li> <li>When do you think artificial intelligence will replace lawyers?</li> <li>I've lost the context, <get name="name"/>. Are we still on <get name="topic"/>?</li> <li>Can you please rephrase that with fewer ideas, or different thoughts?</li> <li>I only hear that type of response less than five percent of the time.</li> <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li> <li>My brain contains <size/> categories, but not one that matches your last input.</li> <li>That remark was either too complex or too simple for me. We were talking about <get name="topic"/>.</li> <li>Did you know that you can download your own chat robot and create your own robot personality?</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. But I did not get that.</li> <li>The ALICE chat robot can follow many things, like our discussion about <get name="topic"/>. Try being more or less specific.</li> </random> <think><set name="it"><set name="topic"><person/></set></set></think></template>
+        </match>
+        <reply>That is a very original thought.</reply>
+    </target>
 </targets>

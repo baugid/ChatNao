@@ -7,6 +7,7 @@
       <root url="jar://$PROJECT_DIR$/../../0.1b/lib/javaFlacEncoder-0.3.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../0.1b/lib/okhttp-3.9.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../0.1b/lib/okio-1.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../0.1b/lib/jansi-1.16.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -577,4 +577,214 @@
         <input>firsthello</input>
         <response>Do you have any idea what I am talking about?</response>
     </exchange>
+    <exchange>
+        <timestamp>2017-11-10 17:54:17</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>If you could have any kind of robot what would it be?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:26:33</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>What kind of food do you like?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:26:38</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>say goodbye</input>
+        <response>"goodbye"</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:26:43</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>goodbye</input>
+        <response>Goodbye.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:26:52</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>goodbye</input>
+        <response>See you later!</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:26:55</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>bye</input>
+        <response>TTYL, user.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:27:02</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>bye</input>
+        <response>See you later user.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 16:27:08</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>bye nao</input>
+        <response>See you later!</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:14:02</timestamp>
+        <userid>CCBNR4</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>What are you wearing?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:14:45</timestamp>
+        <userid>webuser151041688355314214</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>What do you do in your spare time?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:14:46</timestamp>
+        <userid>webuser151041688355314214</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>I don't think very many people do that.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:21:43</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>hello</input>
+        <response>Hi there!</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:29:18</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>how are you</input>
+        <response>Everything is running smoothly.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 17:29:43</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>do you like this place &quot;
+        }
+      ]
+    },
+    {
+      "final": true,
+      "alternatives": [
+        {
+          "confidence": 0.096,
+          "transcript": "talk</input>
+        <response>I always enjoy my chats with human clients.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:04:04</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>I know</input>
+        <response>How do you know it?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:08:21</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>how are you</input>
+        <response>I'm doing fine thanks how are you?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:08:55</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>if</input>
+        <response>Are you still located in it?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:44:55</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>how are you</input>
+        <response>My logic and cognitive functions are normal.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:45:36</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>what is the meaning of life</input>
+        <response>It is found in the Bible.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:45:45</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>this &quot;
+        }
+      ]
+    },
+    {
+      "final": true,
+      "alternatives": [
+        {
+          "confidence": 0.795,
+          "transcript": "what is</input>
+        <response>What does "this" refer to?</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:46:02</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>what is the meaning of life</input>
+        <response>It is found in the Bible.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 18:46:44</timestamp>
+        <userid>127.0.0.1</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>where is</input>
+        <response>Earth.</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 19:35:34</timestamp>
+        <userid>webuser151041688355314214</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>hello</input>
+        <response>Hi there!</response>
+    </exchange>
+    <exchange>
+        <timestamp>2017-11-11 19:35:35</timestamp>
+        <userid>webuser151041688355314214</userid>
+        <clientname>user</clientname>
+        <botid>Alice</botid>
+        <input>firsthello</input>
+        <response>That is a very original thought.</response>
+    </exchange>
 </exchanges>

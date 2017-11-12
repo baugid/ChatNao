@@ -12,6 +12,7 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.model.*;
 import javaFlacEncoder.FLAC_FileEncoder;
 import okhttp3.*;
 import org.apache.commons.io.FileUtils;
+import org.fusesource.jansi.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,11 +23,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import static java.lang.System.err;
+import static org.fusesource.jansi.Ansi.ansi;
 
 
 /**
  * @author Kasukoi (Sebastian Grohs)
  * also uses code by: Gideon Baur, Leona Maehler, Max Krass
+ * with support from Tilman Hoffbauer
  */
 public class ChatNao {
 
@@ -41,8 +44,8 @@ public class ChatNao {
         String ip = args[0];
 
         // opening Nao Session with given ip and port
-        app = new Application(args, "tcp://" + ip);
-        System.out.println("Trying to connect to 'tcp://" + ip + "'...");
+        app = new Application(args, "tcp://" + ip + ":9559");
+        System.out.println("Trying to connect to " + ("'tcp://") + ip + "'...");
         app.start();
         s = app.session();
         try {
@@ -86,8 +89,8 @@ public class ChatNao {
     public static void run(File audio) {
         //POSTing audio file to Watson's STT API (see WatsonDeveloperCloud)
         SpeechToText service = new SpeechToText();
-        service.setUsernameAndPassword("aef1eb82-3731-4160-97ba-06bfa8f3ee48", "OBGIlDZwGDEQ");
-        service.setEndPoint("https://stream-fra.watsonplatform.net/speech-to-text/api");
+        service.setUsernameAndPassword("cd48fe0e-955a-42f3-830c-4ec252f98c05", "lKTbWqPLhhAj");
+        service.setEndPoint("https://stream.watsonplatform.net/speech-to-text/api/");
 
         RecognizeOptions options = new RecognizeOptions.Builder()
                 .contentType(HttpMediaType.AUDIO_FLAC)
@@ -96,8 +99,9 @@ public class ChatNao {
         SpeechResults transcript = service.recognize(audio, options).execute();
         String s = transcript.toString();
         String search = "transcript";
+        int pos = s.indexOf(search);
         // end of POST Request. Got transcript as string
-        boolean possible;
+       /* boolean possible;
 
         for (int i = 0; i < s.length(); i++) {
             possible = true;
@@ -107,35 +111,32 @@ public class ChatNao {
                     break;
                 }
             }
-            if (possible) { //found possible String in transcript
-                result = s.substring(i + search.length() + 4, s.length() - 32); //cutting away space before and after String
-                System.out.println(result);
+            if (possible) {*/ //found possible String in transcript
+        if (pos != -1) {
+            result = s.substring(pos + search.length() + 4, s.length() - 32); //cutting away space before and after String
+            System.out.println(result);
 
-                //POSTing String to local Chatbot server
-                OkHttpClient client = new OkHttpClient();
+            //POSTing String to local Chatbot server
+            OkHttpClient client = new OkHttpClient();
 
-                MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-                RequestBody body = RequestBody.create(mediaType, "text=" + result);
-                Request request = new Request.Builder()
-                        .url("http://localhost:2001/")
-                        .post(body)
-                        .addHeader("content-type", "application/x-www-form-urlencoded")
-                        .addHeader("cache-control", "no-cache")
-                        .build();
+            MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
+            RequestBody body = RequestBody.create(mediaType, "text=" + result);
+            Request request = new Request.Builder()
+                    .url("http://localhost:2001/")
+                    .post(body)
+                    .addHeader("content-type", "application/x-www-form-urlencoded")
+                    .addHeader("cache-control", "no-cache")
+                    .build();
 
-                try {
-                    Response response = client.newCall(request).execute();
-                    //got response from Chatbot; calling say with response
-                    say(response.body().string());
-                } catch (IOException ex) {
-                    Logger.getLogger(ChatNao.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
-                break;
+            try {
+                Response response = client.newCall(request).execute();
+                //got response from Chatbot; calling say with response
+                say(response.body().string());
+            } catch (IOException ex) {
+                Logger.getLogger(ChatNao.class.getName()).log(Level.SEVERE, null, ex);
             }
-            else{ //no possible String found => Watson didn't understand what user said
-                say("Sorry, I didn't understand. Could you say that again, please?");
-            }
+        } else { //no possible String found => Watson didn't understand what user said
+            say("Sorry, I didn't understand. Could you say that again, please?");
         }
     }
 
