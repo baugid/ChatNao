@@ -1,9 +1,9 @@
-## ChatNao
+# ChatNao
 Talk to your NAO!
 
 ChatNao is a Programm based on IBM's watson and the AIML Chatbot Charliebot.
 
-#Simple Instructions
+## Simple Instructions
 [1] Change the IP in the start.bat to the IP of your NAO
 [2] Start the start.bat in cmd
 [3] 2 Windows will open. Leave the new window open (in background)
@@ -12,7 +12,7 @@ ChatNao is a Programm based on IBM's watson and the AIML Chatbot Charliebot.
 [6] Wait a bit. This step can take a while, depending on Computer power and Internet speed (normally about 5-20 seconds)
 [7] Your NAO should give you an answer.
 
-# Detailed instructions:
+## Detailed instructions:
 
 To use this Programm, simply download it from the Releases tab, change the IP in the start.bat to the IP of your NAO and start it.
 The start.bat should open 2 Windows.The chatbot will boot up in the first. The other window is the important one for you.
@@ -23,7 +23,7 @@ After that, the programm will say "Recording stopped".
 The Audio will now be converted to FLAC and send to Watson. The answer will then be put into the chatbot.
 The answer of the chatbot is then given to the NAO and he will speak.
 
-# Credits
+## Credits
 Main Java Code: Kasukoi (Sebastian Grohs)
 With support from: Gideon Baur, Leona Maehler, Max Krass, Tilman Hoffbauer
 
