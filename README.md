@@ -1,7 +1,9 @@
 # ChatNao
 Talk to your NAO!
 
-ChatNao is a Programm based on IBM's watson and the AIML Chatbot Charliebot.
+With this Programm you can speak to your NAO and it will answer!
+
+ChatNao is a Programm based on IBM's Watson and the AIML Chatbot Charliebot.
 
 ## Simple Instructions
 1. Change the IP in the start.bat to the IP of your NAO
