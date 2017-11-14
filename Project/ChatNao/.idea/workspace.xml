@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="623d8bea-69f9-49d4-a7d2-354e2cbdf234" name="Default" comment="major refactorings">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chatnao/NaoConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chatnao/TactileHeadHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="623d8bea-69f9-49d4-a7d2-354e2cbdf234" name="Default" comment="removed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chatnao/ChatNao.java" afterPath="$PROJECT_DIR$/src/chatnao/ChatNao.java" />
     </list>
@@ -27,14 +23,14 @@
       <file leaf-file-name="ChatNao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chatnao/ChatNao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1586">
-              <caret line="126" column="4" lean-forward="false" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="4" />
+            <state relative-caret-position="1661">
+              <caret line="129" column="20" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#987#988#0" expanded="true" />
                 <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2162#2163#0" expanded="true" />
+                <element signature="e#2222#2223#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +39,8 @@
       <file leaf-file-name="NaoConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chatnao/NaoConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="640">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -455,12 +451,20 @@
       <updated>1508091232984</updated>
       <workItem from="1510354319950" duration="2350000" />
       <workItem from="1510677292859" duration="29000" />
-      <workItem from="1510677360241" duration="4367000" />
+      <workItem from="1510677360241" duration="4454000" />
     </task>
+    <task id="LOCAL-00001" summary="major refactorings">
+      <created>1510681765643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510681765643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6746000" />
+    <option name="totallyTimeSpent" value="6833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
@@ -559,8 +563,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,8 +577,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,8 +591,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,8 +605,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,8 +619,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,8 +633,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatnao/NaoConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="640">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -740,14 +744,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chatnao/ChatNao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1586">
-          <caret line="126" column="4" lean-forward="false" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="4" />
+        <state relative-caret-position="1661">
+          <caret line="129" column="20" lean-forward="false" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
           </folding>
         </state>
       </provider>

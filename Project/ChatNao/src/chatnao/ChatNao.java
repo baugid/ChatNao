@@ -124,9 +124,10 @@ public class ChatNao {
         return transcript.toString();
     }
 
-    public void start() {
-        nao.start();
+    public boolean start() {
+        if (!nao.start()) return false;
         nao.setTactileHeadHandler(this::toggleRecording);
+        return true;
     }
 
 }
