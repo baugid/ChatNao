@@ -73,8 +73,9 @@ public class NaoConnection {
             removeTactileHeadHandler();
         this.handler = handler;
         try {
-            for (int i = 0; i < 3; i++)
-                subscriptionID[i] = mem.subscribeToEvent("FrontTactileTouched", (EventCallback<Float>) handler::onTap);
+            subscriptionID[0] = mem.subscribeToEvent("FrontTactileTouched", (EventCallback<Float>) handler::onTap);
+            subscriptionID[1] = mem.subscribeToEvent("MiddleTactileTouched", (EventCallback<Float>) handler::onTap);
+            subscriptionID[2] = mem.subscribeToEvent("RearTactileTouched", (EventCallback<Float>) handler::onTap);
         } catch (Exception e) {
             e.printStackTrace();
         }
