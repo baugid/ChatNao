@@ -1,0 +1,12 @@
+ipNao:127.0.0.1
+portNao:1337
+audio_Source_Path:/home/nao/record.wav
+ftpFilePath:/record.wav
+audio_Source_Type:wav
+samplerate:16000
+originalFileName(PC):\res\audio-file.wav
+convertedFileName(PC):\res\audio-file.flac
+botAddress:http://localhost:2001/
+textToSpeechAddress:https://stream.watsonplatform.net/speech-to-text/api/
+textToSpeechUsername:cd48fe0e-955a-42f3-830c-4ec252f98c05
+textToSpeechPassword:lKTbWqPLhhAj

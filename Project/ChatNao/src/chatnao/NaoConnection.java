@@ -12,9 +12,8 @@ import com.aldebaran.qi.helper.proxies.ALTextToSpeech;
 /**
  * @author Gideon
  */
-public class NaoConnection {
+class NaoConnection {
 
-    public final String ip;
     private Application app;
     private ALTextToSpeech tts;
     private ALAudioRecorder rec;
@@ -23,12 +22,11 @@ public class NaoConnection {
     private long subscriptionID[] = new long[3];
     private boolean recording;
 
-    public NaoConnection(String[] args, String ip, int port) {
-        app = new Application(args, ip + ":" + port);
-        this.ip = ip;
+    NaoConnection(String[] args, String ip, int port) {
+        app = new Application(args, "tcp://" + ip + ":" + port);
     }
 
-    public boolean start() {
+    boolean start() {
         app.start();
         Session s = app.session();
         try {
@@ -42,7 +40,7 @@ public class NaoConnection {
     }
 
 
-    public void say(String s) {
+    void say(String s) {
         try {
             tts.say(s);
         } catch (CallError | InterruptedException e) {
@@ -50,7 +48,7 @@ public class NaoConnection {
         }
     }
 
-    public void startRecording(String filename, String filetype, int samplerate, Tuple4<Integer, Integer, Integer, Integer> channels) {
+    void startRecording(String filename, String filetype, int samplerate, Tuple4<Integer, Integer, Integer, Integer> channels) {
         try {
             rec.startMicrophonesRecording(filename, filetype, samplerate, channels);
         } catch (CallError | InterruptedException e) {
@@ -59,7 +57,7 @@ public class NaoConnection {
         recording = true;
     }
 
-    public void endRecording() {
+    void endRecording() {
         if (!recording) return;
         try {
             rec.stopMicrophonesRecording();
@@ -68,7 +66,7 @@ public class NaoConnection {
         }
     }
 
-    public void setTactileHeadHandler(TactileHeadHandler handler) {
+    void setTactileHeadHandler(TactileHeadHandler handler) {
         if (this.handler != null)
             removeTactileHeadHandler();
         this.handler = handler;
@@ -81,7 +79,7 @@ public class NaoConnection {
         }
     }
 
-    public void removeTactileHeadHandler() {
+    private void removeTactileHeadHandler() {
         handler = null;
         try {
             mem.unsubscribeToEvent(subscriptionID[0]);
@@ -92,10 +90,4 @@ public class NaoConnection {
         }
     }
 
-    public void stop() {
-        if (handler != null)
-            removeTactileHeadHandler();
-        endRecording();
-        app.stop();
-    }
 }

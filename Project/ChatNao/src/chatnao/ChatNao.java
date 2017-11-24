@@ -5,6 +5,7 @@ import com.ibm.watson.developer_cloud.http.HttpMediaType;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
+import configs.Configs;
 import javaFlacEncoder.FLAC_FileEncoder;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -24,18 +25,23 @@ import java.net.URL;
  */
 public class ChatNao {
 
-    private static String result;
     private NaoConnection nao;
     private boolean recording;
     private boolean calculating;
+    private MainConfig config;
 
-    public ChatNao(String[] args, String naoIp, int naoPort) {
-        nao = new NaoConnection(args, naoIp, naoPort);
+    public ChatNao(String[] args) {
+        config = new MainConfig();
+        try {
+            Configs.loadFromFile(config, "config.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        nao = new NaoConnection(args, config.ipNao, config.portNao);
     }
 
     public static void main(String[] args) {
-        String ip = args[0];
-        if (!new ChatNao(args, ip, 9559).start()) {
+        if (!new ChatNao(args).start()) {
             System.err.println("Error: can´t start connection to NAO!");
         }
     }
@@ -50,15 +56,14 @@ public class ChatNao {
                 calculating = false;
             } else if (!calculating) {
                 recording = true;
-                nao.startRecording("/home/nao/record.wav", "wav", 16000, new Tuple4<>(0, 0, 1, 0));
+                nao.startRecording(config.fileOnNao, config.fileTypeOnNao, config.samplerate, new Tuple4<>(0, 0, 1, 0));
             }
         }
     }
 
-    private void copyAudioFromNao(String fileOnNao, File fileOnPc) {
-        File targetFile = new File("\\res\\audio-file.wav");
+    private void copyAudioFromNao(File fileOnPc) {
         try {
-            FileUtils.copyInputStreamToFile(new URL("ftp://nao:nao@" + nao.ip + fileOnNao).openConnection().getInputStream(), fileOnPc);
+            FileUtils.copyInputStreamToFile(new URL("ftp://nao:nao@" + config.ipNao + config.ftpFilePath).openConnection().getInputStream(), fileOnPc);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -72,14 +77,15 @@ public class ChatNao {
         OkHttpClient client = new OkHttpClient();
 
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-        RequestBody body = RequestBody.create(mediaType, "text=" + result);
+        RequestBody body = RequestBody.create(mediaType, "text=" + text);
         Request request = new Request.Builder()
-                .url("http://localhost:2001/")
+                .url(config.botAddress)
                 .post(body)
                 .addHeader("content-type", "application/x-www-form-urlencoded")
                 .addHeader("cache-control", "no-cache")
                 .build();
         try {
+            //noinspection ConstantConditions
             return client.newCall(request).execute().body().string();
         } catch (IOException e) {
             e.printStackTrace();
@@ -88,11 +94,11 @@ public class ChatNao {
     }
 
     private void handleRecord() {
-        File flacFile = new File("\\res\\audio-file.flac");
-        File wavFile = new File("\\res\\audio-file.wav");
-        copyAudioFromNao("/record.wav", wavFile);
-        convertToFlac(flacFile, wavFile);
-        String text = extractResult(FlacToText(flacFile));
+        File encodedFile = new File(config.convertedFileName);
+        File sourceFile = new File(config.originalFileName);
+        copyAudioFromNao(sourceFile);
+        convertToFlac(encodedFile, sourceFile);
+        String text = extractResult(FlacToText(encodedFile));
         if (text == null) {
             System.err.println("Unable to understand what human being said!");
             nao.say("Sorry, I didn't understand. Could you say that again, please?");
@@ -113,8 +119,8 @@ public class ChatNao {
 
     private String FlacToText(File flacFile) {
         SpeechToText service = new SpeechToText();
-        service.setUsernameAndPassword("cd48fe0e-955a-42f3-830c-4ec252f98c05", "lKTbWqPLhhAj");
-        service.setEndPoint("https://stream.watsonplatform.net/speech-to-text/api/");
+        service.setUsernameAndPassword(config.textToSpeechUsername, config.textToSpeechPassword);
+        service.setEndPoint(config.textToSpeechAddress);
 
         RecognizeOptions options = new RecognizeOptions.Builder()
                 .contentType(HttpMediaType.AUDIO_FLAC)
@@ -124,7 +130,7 @@ public class ChatNao {
         return transcript.toString();
     }
 
-    public boolean start() {
+    private boolean start() {
         if (!nao.start()) return false;
         nao.setTactileHeadHandler(this::toggleRecording);
         return true;
