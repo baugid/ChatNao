@@ -28,7 +28,6 @@ public class Configs {
                 else
                     name = f.getName();
                 assert !map.containsKey(name);
-                f.setAccessible(true);
                 map.put(name, f);
             }
         }
@@ -38,6 +37,7 @@ public class Configs {
     private static void setConfigSetting(Config config, Field setting, String value) {
         try {
             Class<?> type = setting.getType();
+            setting.setAccessible(true);
             if (type.isPrimitive()) {
                 if (type == int.class)
                     setting.setInt(config, Integer.parseInt(value));
@@ -75,13 +75,13 @@ public class Configs {
 
     private static String removeSpacesAroundSplit(String s, String splitString) {
         StringBuilder b = new StringBuilder(s);
-        for (int i = b.indexOf(splitString); i >= 0; i--) {
+        for (int i = b.indexOf(splitString) - 1; i >= 0; i--) {
             if (b.charAt(i) == ' ')
                 b.deleteCharAt(i);
             else
                 break;
         }
-        for (int i = b.indexOf(splitString); i < b.length(); i++) {
+        for (int i = b.indexOf(splitString) + 1; i < b.length(); i++) {
             if (b.charAt(i) == ' ')
                 b.deleteCharAt(i);
             else
